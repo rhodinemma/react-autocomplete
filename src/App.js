@@ -9,6 +9,7 @@ function App() {
 
   const getData = async () => {
     const res = await axios.get("https://jsonplaceholder.typicode.com/users");
+    console.log(res);
     var hintArray = [];
     res.data.map((a) => hintArray.push(a.name));
     setHintData(hintArray);
@@ -16,7 +17,7 @@ function App() {
 
   useEffect(() => {
     getData();
-  });
+  }, []);
 
   return (
     <div className="App">
