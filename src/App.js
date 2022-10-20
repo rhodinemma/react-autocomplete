@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className="App">
-      <h5>Try typing these words</h5>
+      <h5>Try typing something</h5>
       <code>{`[${hintData.toString()}]`}</code>
       <br />
       <br />
